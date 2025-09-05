@@ -1,7 +1,7 @@
 from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.whapi.routes import auth, posts, taxonomy, engagement, uploads, sitemap, captcha, rss, admin
+from app.api.routes import auth, posts, taxonomy, engagement, uploads, sitemap, captcha, rss, admin
 from fastapi import APIRouter
 from datetime import datetime, timezone
 from app.core.config import get_settings
