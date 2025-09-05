@@ -1,0 +1,19 @@
+# Generated from pyproject.toml [project.dependencies]
+# If you update pyproject.toml, regenerate this list (manually or via pip freeze inside the backend image).
+fastapi
+uvicorn[standard]
+SQLAlchemy>=2.0
+alembic
+psycopg2-binary
+pydantic>=2.6
+pydantic-settings
+email-validator
+python-jose[cryptography]
+passlib[bcrypt]
+redis
+python-multipart
+aiofiles
+httpx
+orjson
+pytest
+pytest-asyncio

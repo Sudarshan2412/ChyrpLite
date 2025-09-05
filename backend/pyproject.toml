@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chyrplite-backend"
+version = "0.1.0"
+description = "Modern ChyrpLite backend (FastAPI + SQLAlchemy)"
+authors = [{name="Hackathon"}]
+requires-python = ">=3.13"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "SQLAlchemy>=2.0",
+  "alembic",
+  "psycopg2-binary",
+  "pydantic>=2.6",
+  "pydantic-settings",
+  "email-validator",
+  "python-jose[cryptography]",
+  "passlib[bcrypt]",
+  "redis",
+  "python-multipart",
+  "aiofiles",
+  "httpx",
+  "orjson",
+  "pytest",
+  "pytest-asyncio"
+]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+namespaces = false
+
+[tool.black]
+line-length = 100
