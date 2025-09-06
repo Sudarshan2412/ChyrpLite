@@ -19,7 +19,8 @@ frontend_origins = [
     "http://localhost:3000",
     "http://localhost:3001",
     os.getenv("FRONTEND_ORIGIN", "http://localhost:3000"),
-    "https://chyrplite-49c413eaf-sudarshan-s-ns-projects.vercel.app",  # Vercel domain, no trailing slash
+    "https://chyrplite-49c413eaf-sudarshan-s-ns-projects.vercel.app",
+    "https://chyrplite-ten.vercel.app"  # Production Vercel frontend
 ]
 app.add_middleware(
     CORSMiddleware,

@@ -23,7 +23,7 @@ export default function Navbar() {
             <Link href="/">Home</Link>
             <Link href="/create">Create</Link>
             <Link href="/explore">Explore</Link>
-            <Link href="/about">About</Link>
+            {/* About link removed */}
           </nav>
         </div>
         <div className="flex items-center space-x-2">
